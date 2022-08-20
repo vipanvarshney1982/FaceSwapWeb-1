@@ -12,7 +12,7 @@ from face_swap import face_swap
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='FaceSwapApp')
-    parser.add_argument('--correct_color', default=False, action='store_true', help='Correct color')
+    parser.add_argument('--correct_color', default=True, action='store_true', help='Correct color')
     parser.add_argument('--warp_2d', default=False, action='store_true', help='2d or 3d warp')
     args = parser.parse_args()
     
