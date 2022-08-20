@@ -26,8 +26,8 @@ if __name__ == '__main__':
 
 
        # Convert images from PIL to CV2
-       src_img = cv2.cvtColor(numpy.array(source_image), cv2.COLOR_RGB2BGR)
-       dst_img = cv2.cvtColor(numpy.array(target_image), cv2.COLOR_RGB2BGR)
+       src_img = cv2.cvtColor(numpy.array(source_image), cv2.IMREAD_COLOR)
+       dst_img = cv2.cvtColor(numpy.array(target_image), cv2.IMREAD_COLOR)
 
        # Select src face
        src_points, src_shape, src_face = select_face(src_img)
